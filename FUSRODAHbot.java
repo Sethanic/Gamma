@@ -30,7 +30,7 @@ public class FUSRODAHbot extends Robot
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
-			turnGunRight(360);
+			turnRadarRight(360);
 		}
 	}
 
@@ -50,7 +50,7 @@ public class FUSRODAHbot extends Robot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(10);
+		ahead(1000);
 	}       
 	
 	/**
@@ -58,6 +58,6 @@ public class FUSRODAHbot extends Robot
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		turnRight(360);  
+		turnRight(360);
 	}
 }																						
