@@ -31,7 +31,6 @@ public class FUSRODAHbot extends Robot
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
 			turnGunRight(360);
-	
 		}
 	}
 
@@ -52,14 +51,13 @@ public class FUSRODAHbot extends Robot
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
 		ahead(10);
-}
+	}       
 	
 	/**
 	 * onHitWall: What to do when you hit a wall
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(20);
-	}	
-}
-								
+		turnRight(360);  
+	}
+}																						
