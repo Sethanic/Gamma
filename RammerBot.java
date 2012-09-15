@@ -1,6 +1,6 @@
 package Gamma;
 import robocode.*;
-//import java.awt.Color;
+import java.awt.Color;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
 
@@ -26,7 +26,6 @@ public class RammerBot extends Robot
 			ahead(100);
 			turnGunRight(360);
 			back(100);
-			turnGunRight(360);
 		}
 	}
 
@@ -35,11 +34,9 @@ public class RammerBot extends Robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
 		// Replace the next line with any behavior you would like
-		if (e.getBearing() >= 0) {
-			turnDirection = 1;
-		} else {
-			turnDirection = -1;
-		}
+		double bearing;
+		bearing=e.getBearing();
+		turnRight(bearing);
 
 		turnRight(e.getBearing());
 		ahead(e.getDistance() + 5);
