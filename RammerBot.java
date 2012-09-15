@@ -18,7 +18,7 @@ public class RammerBot extends Robot
 		// After trying out your robot, try uncommenting the import at the top,
 		// and the next line:
 
-		setColors(Color.black,Color.red,Color.green); // body,gun,radar
+		setColorBody(Color.black,Color.red,Color.green); // body,gun,radar
 
 		// Robot main loop
 		while(true) {
@@ -67,3 +67,4 @@ public class RammerBot extends Robot
 	
 	}	
 }
+																				
