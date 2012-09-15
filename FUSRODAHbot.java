@@ -1,6 +1,12 @@
 package Gamma;
 import robocode.*;
-//import java.awt.Color;
+import robocode.Robot;
+import robocode.ScannedRobotEvent;
+//import robocode.WinEvent;
+//import static robocode.util.Utils.normalRelativeAngleDegrees;
+
+//import java.awt.*;
+import java.awt.Color;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
 
@@ -18,14 +24,13 @@ public class FUSRODAHbot extends Robot
 		// After trying out your robot, try uncommenting the import at the top,
 		// and the next line:
 
-		// setColors(Color.red,Color.blue,Color.green); // body,gun,radar
+		setColors(Color.black,Color.red,Color.green); // body,gun,radar
 
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
 			turnGunRight(360);
-			
 	
 		}
 	}
